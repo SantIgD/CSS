@@ -1,0 +1,185 @@
+#titulo{  /*# para seleccionar ids */
+    color:tomato;
+}
+
+p.texto{ /*objetoEnHtml.Clase*/
+    color: slateblue;
+}
+
+p.especial{
+    color:mediumaquamarine;
+}
+
+div p { /* selecciono todos los objetos p que están dentro de divs*/
+    color:aquamarine;
+}
+
+div h2, div h3{ /* con coma puedo usar varios selectores para un style */
+    color: brown;
+}
+
+*{ /* solo modifica las propiedades que no hayan sido establecidas */
+    font-size: 24px;
+    /* color: black; */
+}
+
+.RGB-color {
+    color: #0ff; /*RojoVerdeAzul*/
+}
+
+.RRGGBB-color {
+    color: #ff0000; /*RojoRojoVerdeVerdeAzulAzul*/
+}
+
+.rgb-color{
+    color: rgb(0,0,150) /* x,y,z\in[0,255], (x,y,z)*/
+}
+
+.color{
+    /* border: 5px red dotted; */   
+    border-style:solid;
+    border-color: blue;
+    border-radius: 5px;
+    /* border-width: 2em; 2 veces el tamaÑo de la fuente que se está utilziando */
+    border-width: 2rem; /*2 veces el tamaÑo por default de la etiqueta html, default 16*/
+}
+
+#background {
+    background-color: rgba(0,0,0,0.5); /*rgb mas opacidad, opacidad entre [0,5]*/
+    background-image: url("img/Cumple.jpg");
+    height: 400px;
+    /*
+    background-repeat: repeat-y;
+    background-position: center center; */
+    background: #ff0000 url('img/Cumple.jpg') repeat-y center center / 100px 100px;
+    /* background-size: 200px 200px; */
+}
+
+.margen{
+    background-color: chocolate;
+    margin: 15px 20px 25px 30px; /* top right bottom left, fuera del elemento*/
+    padding: 30px 25px 20px 15px; /* modifica espacios dentro del elemento*/
+    border: solid 1px black; /* entre el padding y el margin */
+    height: 100px;
+    width: 50px;
+    overflow: scroll; /* invisible, hidden, scroll*/
+    outline: 1px solid red;
+}
+
+.texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    /* text-decoration: underline; */
+    /* text-decoration: line-through; */
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue; /* cuanto a la derecha, cuanto abajo, blurr*/
+
+}
+
+/*El orden de estos anchor es importante. El orden es el siguiente*/
+
+a:link{
+    color: blueviolet;
+}
+
+a:visited{
+    color: gray;
+}
+
+a:hover{
+    color: green;
+}
+
+a:active{
+    color: red;
+}
+
+ul {
+    background-color: cyan;
+    list-style-type: circle;
+    /* padding-left: 0; */
+    /* list-style-position: inside; */
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border:solid 1px #eee;
+    padding: 5px;
+}
+
+th{
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+
+span{
+    /* display: block; viene en la mayoria de elementos por default, toma todo el ancho */
+    /* display:none; */
+    /* visibility: hidden; */
+    display:block;
+    max-width: 300px;
+    background-color: #ff0000;
+}
+
+.inline{
+    display: inline;
+}
+
+#position{
+    position: sticky;
+    left: 20px;
+    top: 25px;
+
+}
+
+.left{
+    float: left;
+    width: 200px;
+}
+
+
+.right{
+    float: right;
+    width: 200px;
+
+}
+
+.conteiner{
+    height:200px;
+}
+
+.column{
+    
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%
+}
+
+.inline-block{
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+}
+
+.center{
+    padding:50px 0;
+    width:200px;
+    margin: 0 auto;
+    background-color: aqua;
+    text-align: center;
+}
